@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>沼口 来翔 — RAITO NUMAGUCHI</title>
+<meta name="description" content="沼口 来翔 — Official Portfolio">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+:root{--bg:#050505;--fg:#f5f5f5;--muted:#888;--line:#222;--accent:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,"Noto Sans JP",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:50}
+nav{position:fixed;z-index:40;top:0;left:0;right:0;padding:21px 5vw;display:flex;justify-content:space-between;background:linear-gradient(#050505e8,transparent);backdrop-filter:blur(7px)}.logo{font-size:13px;font-weight:900;letter-spacing:.12em}.links{display:flex;gap:24px;font-size:11px;color:#bbb}.links a{transition:color .25s}.links a:hover{color:#fff}
+.hero{height:100vh;min-height:650px;position:relative;overflow:hidden;display:flex;align-items:flex-end;background:#050505}.hero:before{content:"";position:absolute;inset:-30px;background-image:linear-gradient(90deg,#000b,#0003 55%,#000b),url("images/hero.jpeg");background-size:cover;background-position:center;filter:blur(22px) brightness(.5);transform:scale(1.08)}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center center;filter:saturate(.9) brightness(.92);animation:heroZoom 10s ease-out both;z-index:1}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000c,transparent 62%),linear-gradient(0deg,#050505,transparent 48%);z-index:2}.heroText{position:relative;z-index:3}.heroText{position:relative;z-index:2;padding:0 5vw 8vh}.kicker,.heroText h1,.heroText .jp,.heroText .tag{opacity:0;transform:translateY(28px);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}.kicker{font-size:11px;letter-spacing:.32em;color:#ddd;margin-bottom:18px;animation-delay:.25s}h1{font-size:clamp(72px,14vw,205px);line-height:.78;letter-spacing:-.075em;margin:0;font-weight:900;color:#fff;text-shadow:0 4px 24px #000,0 1px 3px #000;animation-delay:.42s}.jp{font-size:clamp(28px,3.5vw,48px);font-weight:900;letter-spacing:.08em;margin-top:25px;color:#fff;text-shadow:0 3px 18px #000,0 1px 3px #000;animation-delay:.58s}.tag{display:inline-block;border:1px solid #ffffff55;padding:10px 14px;margin-top:25px;font-size:10px;letter-spacing:.18em;animation-delay:.74s}
+.scroll{position:absolute;right:5vw;bottom:38px;z-index:3;font-size:9px;letter-spacing:.3em;color:#aaa;writing-mode:vertical-rl;animation:float 2s ease-in-out infinite}
+section{padding:110px 5vw;border-top:1px solid var(--line)}.wrap{max-width:1200px;margin:auto}.eyebrow{font-size:10px;color:#777;letter-spacing:.3em;margin-bottom:15px}.title{font-size:clamp(42px,7vw,82px);line-height:.9;letter-spacing:-.06em;margin:0 0 55px}
+.reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}.reveal.show{opacity:1;transform:none}.delay1{transition-delay:.08s}.delay2{transition-delay:.16s}.delay3{transition-delay:.24s}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.about p{color:#c5c5c5;line-height:1.9;font-size:17px}.asia-callout{border-left:2px solid #fff;padding:16px 18px;margin-top:24px;color:#aaa!important}.asia-callout strong{color:#fff;font-size:22px}.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;background:var(--line);gap:1px}.stat{background:var(--bg);padding:28px;min-height:145px}.stat b{font-size:48px;display:block}.stat span{font-size:9px;color:#777;letter-spacing:.15em}
+.competition{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}.comp{grid-column:span 4;height:450px;position:relative;overflow:hidden;background:#111}.comp img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .5s}.comp:hover img{transform:scale(1.07);filter:brightness(1.08)}.comp span{position:absolute;left:16px;right:16px;bottom:15px;background:#000c;padding:10px;font-size:10px;letter-spacing:.08em;line-height:1.45}
+.achievement-note{font-size:clamp(20px,3vw,34px);font-weight:800;letter-spacing:-.03em;border:1px solid #444;padding:24px 28px;margin:0 0 18px;background:linear-gradient(90deg,#111,#070707);position:relative;overflow:hidden}.achievement-note:after{content:"OFFICIAL TITLES";position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:9px;letter-spacing:.25em;color:#666}.achievement-list{display:grid;gap:1px;background:var(--line)}.achievement{background:var(--bg);padding:25px 28px;display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:center;border-left:2px solid transparent;transition:.3s}.achievement:hover{background:#0d0d0d;border-left-color:#fff;transform:translateX(5px)}.achievement .num{font-size:11px;color:#666;letter-spacing:.15em}.achievement h3{font-size:clamp(20px,3vw,34px);margin:0;letter-spacing:-.04em}.achievement b{font-size:11px;color:#888;letter-spacing:.16em}
+.model-title{display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.model-title .title{margin-bottom:30px}.model-badge{font-size:11px;letter-spacing:.25em;color:#777;padding-bottom:32px}.hm-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.hm-main{height:680px;overflow:hidden}.hm-main img,.model-small img,.nike-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}.hm-main:hover img,.model-small:hover img,.nike-photo:hover img{transform:scale(1.045)}.hm-side{display:grid;grid-template-rows:1fr 1fr;gap:14px}.model-small{min-height:330px;overflow:hidden;position:relative}.model-caption{position:absolute;left:18px;bottom:18px;background:#000c;padding:10px 13px;font-size:10px;letter-spacing:.12em}.model-copy{margin-top:30px;color:#aaa;line-height:1.8;max-width:720px}.model-copy strong{color:#fff}
+.nike{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center}.nike-photo{height:780px;overflow:hidden;position:relative;background:#0b0b0b}.nike-photo img{object-position:center bottom}.nike-photo:after{content:"NIKE / FOOTWEAR";position:absolute;left:22px;bottom:20px;background:#000d;padding:12px 15px;font-size:12px;font-weight:800;letter-spacing:.2em}.nike-copy .label{font-size:10px;color:#777;letter-spacing:.25em;margin-bottom:16px}.nike-copy h3{font-size:clamp(55px,9vw,115px);line-height:.8;letter-spacing:-.08em;margin:0 0 28px}.nike-copy .shoe-focus{font-size:clamp(30px,5vw,64px);font-weight:900;letter-spacing:-.06em;margin:20px 0 8px}.nike-copy .shoe-focus span{display:block;font-size:10px;letter-spacing:.25em;color:#777;margin-top:10px}.nike-copy p{color:#aaa;line-height:1.8}.nike-mark{font-size:clamp(28px,5vw,65px);font-weight:900;font-style:italic;letter-spacing:-.08em;margin-top:45px}
+.sponsor-intro{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}.sponsor-intro .title{margin-bottom:0}.sponsor-intro .sponsor-big{font-size:clamp(12px,1.5vw,18px);font-weight:900;letter-spacing:.2em;color:#aaa;text-align:right}.sponsors{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #444;box-shadow:0 20px 80px #000;position:relative}.sponsors:before{content:"SUPPORTED BY";position:absolute;left:18px;top:-13px;background:#050505;padding:0 10px;font-size:9px;letter-spacing:.3em;color:#777}.sponsor{min-height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;border-right:1px solid #333;text-align:center;transition:.25s}.sponsor:last-child{border-right:0}.sponsor:hover{background:#111;transform:translateY(-5px)}.sponsor strong{font-size:clamp(25px,3.5vw,50px);font-weight:900;letter-spacing:-.05em}.sponsor:nth-child(1) strong{font-size:clamp(30px,4vw,58px)}.sponsor:nth-child(4) strong{font-size:clamp(34px,5vw,72px);font-style:italic}.sponsor small{margin-top:14px;color:#666;font-size:9px;letter-spacing:.25em}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:70px}.contact-card{background:var(--bg);padding:38px}.contact-label{font-size:10px;color:#777;letter-spacing:.25em;margin-bottom:18px}.insta{font-size:clamp(30px,5vw,62px);font-weight:900;letter-spacing:-.06em}.mail{font-size:clamp(17px,2.4vw,30px);font-weight:700;word-break:break-word}.contact-card a{transition:opacity .2s}.contact-card a:hover{opacity:.65}
+.next{min-height:48vh;display:flex;align-items:center}.next h2{font-size:clamp(58px,11vw,145px);line-height:.78;letter-spacing:-.07em;margin:0}.next p{color:#777;line-height:1.8;margin-top:35px}.by-nike{font-size:clamp(75px,17vw,230px);font-weight:900;line-height:.75;letter-spacing:-.09em;text-align:right;font-style:italic;margin-top:100px;overflow:hidden}.by-nike span{display:inline-block;animation:floatText 4s ease-in-out infinite}
+footer{border-top:1px solid var(--line);padding:30px 5vw;color:#666;font-size:9px;letter-spacing:.15em;display:flex;justify-content:space-between}
+.sponsor-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.65fr);align-items:end;gap:36px}.sponsor-intro .sponsor-big{min-width:0;line-height:1.35}.sponsor strong{white-space:normal;text-align:center;overflow-wrap:break-word;word-break:normal}.sponsor:nth-child(2) strong{font-size:clamp(18px,2.5vw,38px)}.sponsor:nth-child(1) strong,.sponsor:nth-child(3) strong,.sponsor:nth-child(4) strong{white-space:nowrap}@keyframes rise{to{opacity:1;transform:none}}@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes floatText{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:800px){.links{display:none}.heroText{padding-bottom:55px}.about,.nike{grid-template-columns:1fr;gap:45px}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}.sponsor-intro{display:block}.sponsor-intro .sponsor-big{text-align:left;margin-top:0;margin-bottom:25px}.sponsor strong{white-space:normal!important;overflow-wrap:break-word}.competition{grid-template-columns:1fr 1fr}.comp{grid-column:auto;height:280px}.comp:first-child{grid-column:span 2;height:400px}.achievement{grid-template-columns:45px 1fr}.achievement b{display:none}.hm-grid{grid-template-columns:1fr}.hm-main{height:540px}.hm-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr;height:300px}.model-small{min-height:0}.nike-photo{height:560px}.sponsors{grid-template-columns:1fr 1fr}.sponsor{min-height:160px;border-bottom:1px solid #333}.sponsor:nth-child(2){border-right:0}.sponsor:nth-child(3),.sponsor:nth-child(4){border-bottom:0}.contact{grid-template-columns:1fr}.title{margin-bottom:40px}.by-nike{text-align:left;margin-top:70px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* v5 refinements */
+.heroText{padding:0 5vw 9vh;max-width:1000px}.heroText h1,.heroText .jp{ text-shadow:0 3px 24px #000,0 1px 5px #000}.heroText h1{background:linear-gradient(90deg,#fff 0%,#fff 75%,#ddd 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.heroText .jp{display:inline-block;background:#000a;border:1px solid #fff3;padding:8px 14px;border-radius:4px;backdrop-filter:blur(6px)}
+.quick-nav{position:fixed;z-index:60;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;padding:7px;border:1px solid #333;background:#050505dd;backdrop-filter:blur(10px);border-radius:8px;box-shadow:0 12px 45px #000}.quick-nav a{font-size:8px;letter-spacing:.16em;color:#888;padding:8px 9px;border-radius:4px;transition:.2s;white-space:nowrap}.quick-nav a:hover{color:#fff;background:#151515}.quick-nav .q-active{color:#fff;background:#111}
+.video-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:5vw;align-items:center}.video-card{background:#090909;border:1px solid #2b2b2b;overflow:hidden;box-shadow:0 18px 60px #000}.video-card video{width:100%;display:block;aspect-ratio:512/834;object-fit:cover;background:#000}.video-copy h3{font-size:clamp(42px,7vw,90px);line-height:.82;letter-spacing:-.07em;margin:0 0 25px}.video-copy p{color:#aaa;line-height:1.9}.video-tag{font-size:10px;letter-spacing:.25em;color:#777;margin-bottom:15px}
+.dlife{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:center}.dlife-photo{height:720px;overflow:hidden;background:#000;border:1px solid #222}.dlife-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}.dlife-photo:hover img{transform:scale(1.03)}.dlife-copy .mini{font-size:10px;color:#777;letter-spacing:.25em}.dlife-copy h3{font-size:clamp(46px,7vw,92px);line-height:.8;letter-spacing:-.07em;margin:14px 0 28px}.dlife-copy p{color:#bdbdbd;line-height:2;font-size:15px}.dlife-copy strong{color:#fff}
+.sponsors{grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;border-radius:4px}.sponsor{min-width:0;min-height:260px;padding:34px 20px;overflow:hidden;position:relative}.sponsor strong{display:block;max-width:100%;overflow-wrap:anywhere;word-break:break-word;line-height:1.05}.sponsor small{display:block}.sponsor:hover{transform:none}.sponsor:hover strong{transform:scale(1.04)}.sponsor strong{transition:transform .25s ease}.sponsor:nth-child(2) strong{font-size:clamp(20px,2.8vw,42px);letter-spacing:-.08em}.sponsor:after{content:attr(data-no);position:absolute;right:16px;bottom:12px;font-size:8px;color:#333;letter-spacing:.2em}
+@media(max-width:800px){.quick-nav{left:10px;right:10px;top:auto;bottom:10px;transform:none;flex-direction:row;overflow-x:auto;justify-content:flex-start;border-radius:12px;padding:6px}.quick-nav a{font-size:7px;padding:8px 9px;flex:0 0 auto}.heroText{padding-bottom:75px}.heroText h1{font-size:clamp(56px,17vw,102px);color:#fff;text-shadow:0 4px 20px #000,0 1px 3px #000}.heroText .jp{color:#fff;text-shadow:0 3px 16px #000,0 1px 3px #000}.video-wrap,.dlife{grid-template-columns:1fr;gap:30px}.video-card video{max-height:75vh}.dlife-photo{height:560px}.sponsors{grid-template-columns:1fr 1fr}.sponsor{min-height:185px;padding:26px 14px;border-right:1px solid #333!important}.sponsor:nth-child(2),.sponsor:nth-child(4){border-right:0!important}.sponsor:nth-child(3),.sponsor:nth-child(4){border-bottom:0}.sponsor strong{font-size:clamp(22px,7vw,36px)!important}.sponsor small{font-size:8px}}
+
+.final-photo{padding:0;border-top:1px solid #222;background:#000}
+.final-photo-wrap{position:relative;max-width:1400px;margin:auto;height:min(92vh,900px);min-height:560px;overflow:hidden}
+.final-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05);transition:transform 1.2s ease}
+.final-photo:hover img{transform:scale(1.025)}
+.final-caption{position:absolute;left:5vw;bottom:5vh;color:#fff;text-shadow:0 2px 16px #000;display:flex;flex-direction:column;gap:12px}.final-caption strong{font-size:clamp(28px,5vw,64px);letter-spacing:.18em;font-weight:900}.final-caption span{font-size:10px;letter-spacing:.28em;color:#aaa}
+@media(max-width:800px){
+ .final-photo-wrap{height:70vh;min-height:420px}
+}
+</style>
+</head>
+<body id="top"><div class="quick-nav" aria-label="Quick navigation">
+<a href="#top">TOP</a><a href="#about">ABOUT</a><a href="#competition">COMPETITION</a><a href="#achievements">WINS</a><a href="#model">MODEL</a><a href="#dlife">D-LIFE</a><a href="#video">VIDEO</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a>
+</div>
+
+<nav><a class="logo" href="#">RAITO / NUMAGUCHI</a><div class="links"><a href="#about">ABOUT</a><a href="#competition">COMPETITION</a><a href="#achievements">WINS</a><a href="#model">MODEL</a><a href="#dlife">D-LIFE</a><a href="#video">VIDEO</a><a href="#sponsors">SPONSORS</a><a href="#contact">CONTACT</a></div></nav>
+
+<header class="hero">
+<img src="images/hero.jpeg" alt="沼口 来翔">
+<div class="heroText"><div class="kicker">BREAKDANCER / ATHLETE / MODEL</div><h1>RAITO<br>NUMAGUCHI</h1><div class="jp">沼口 来翔</div><div class="tag">MAKE YOUR OWN WAY.</div></div><div class="scroll">SCROLL ↓</div>
+</header>
+
+<section id="about"><div class="wrap"><div class="eyebrow reveal">01 — ABOUT</div><div class="about"><div class="reveal"><h2 class="title">MOVE.<br>CREATE.<br>GO BEYOND.</h2></div><div class="reveal delay1">
+<p>沼口 来翔。ブレイクダンスを軸に、ステージ、ファッション、旅、そして新しい挑戦を続ける。</p><p>自分のスタイルを大切にしながら、まだ見たことのない景色へ。ダンスと表現を通して、次のステージを目指す。</p>
+<div class="stats"><div class="stat"><b>05</b><span>OFFICIAL CHAMPIONSHIPS</span></div><div class="stat"><b>13</b><span>YEARS DANCING</span></div><div class="stat"><b>ASIA</b><span>COMPETITION QUALIFIED</span></div></div><p class="asia-callout"><strong>アジア大会出場決定。</strong><br>国内での経験を次の舞台へ。</p>
+</div></div></div></section>
+
+<section id="competition"><div class="wrap"><div class="eyebrow reveal">02 — COMPETITION</div><h2 class="title reveal">ON THE STAGE.</h2>
+<div class="competition">
+<div class="comp reveal"><img src="images/competition-01.jpeg" alt="U15 ALL JAPAN CC"><span>01 / U15 ALL JAPAN CC — 優勝</span></div>
+<div class="comp reveal delay1"><img src="images/competition-02.jpeg" alt="Breakin of Fukuoka"><span>02 / Breakin of Fukuoka — 優勝</span></div>
+<div class="comp reveal delay2"><img src="images/competition-03.jpeg" alt="WORLD BREAKIN CHALLENGE"><span>03 / WORLD BREAKIN CHALLENGE — 優勝</span></div>
+</div></div></section>
+
+<section id="video"><div class="wrap"><div class="eyebrow reveal">03.5 — VIDEO</div><div class="video-wrap"><div class="video-card reveal"><video controls playsinline muted loop preload="metadata"><source src="video-01.mp4" type="video/mp4"></video></div><div class="video-copy reveal delay1"><div class="video-tag">VIDEO / 01</div><h3>MOVE<br>IN MOTION.</h3><p>ステージで生まれる一瞬を、映像でも残す。<br>ダンスの動きと空気感をそのまま届ける。</p></div></div></div></section>
+
+<section id="achievements"><div class="wrap"><div class="eyebrow reveal">03 — ACHIEVEMENTS</div><h2 class="title reveal">FIVE WINS.</h2>
+<div class="achievement-note reveal">今までで5個の公式大会優勝を経験</div>
+<div class="achievement-list">
+<article class="achievement reveal"><div class="num">01</div><h3>U15 ALL JAPAN CC</h3><b>CHAMPION</b></article>
+<article class="achievement reveal delay1"><div class="num">02</div><h3>Breakin of Fukuoka</h3><b>CHAMPION</b></article>
+<article class="achievement reveal delay2"><div class="num">03</div><h3>WORLD BREAKIN CHALLENGE</h3><b>CHAMPION</b></article>
+<article class="achievement reveal"><div class="num">04</div><h3>Redbull &amp; NIKE Support challenge</h3><b>CHAMPION</b></article>
+<article class="achievement reveal delay1"><div class="num">05</div><h3>清水建設 &amp; Redbull Secret CUP</h3><b>CHAMPION</b></article>
+</div></div></section>
+
+<section id="model"><div class="wrap"><div class="eyebrow reveal">04 — FASHION / MODEL</div><div class="model-title reveal"><h2 class="title">H&amp;M<br>MODEL.</h2><div class="model-badge">FASHION / CAMPAIGN</div></div>
+<div class="hm-grid">
+<div class="hm-main reveal"><img src="images/hm-model.jpeg" alt="H&Mモデル"></div>
+<div class="hm-side"><div class="model-small reveal delay1"><img src="images/hm-model-02.jpeg" alt="H&Mモデル 写真2"><span class="model-caption">H&amp;M MODEL / 02</span></div><div class="model-small reveal delay2"><img src="images/hm-model-03.jpeg" alt="H&Mモデル 写真3"><span class="model-caption">H&amp;M MODEL / 03</span></div></div>
+</div><p class="model-copy reveal"><strong>H&amp;M MODEL</strong><br><span style="font-size:clamp(24px,4vw,48px);font-weight:900;color:#fff;line-height:1.05;display:block;margin:10px 0 14px">ファッションだけじゃない。<br>ビジュアルでも魅せる。</span>ダンスを軸に、ファッション・ビジュアルの両面で表現を広げるモデルとしての活動。</p>
+</div></section>
+
+<section><div class="wrap"><div class="eyebrow reveal">05 — NIKE MODEL</div>
+<div class="nike">
+  <div class="nike-photo reveal"><img src="images/nike-model-cinematic.jpeg" alt="NIKE ストリートモデル"></div>
+  <div class="nike-copy reveal delay1">
+    <div class="label">NIKE / STREET MODEL</div>
+    <h3>NIKE<br>MODEL.</h3>
+    <div class="shoe-focus">SHOES.<span>FOOTWEAR / VISUAL / STREET</span></div>
+    <p>NIKEのモデルとして、特に足元のスタイリングを強くフィーチャー。シューズを主役に、自分らしいストリートのビジュアルを発信していく。</p>
+    <div class="nike-mark">JUST MOVE.</div>
+  </div>
+</div>
+</div></section>
+
+<section id="dlife"><div class="wrap"><div class="eyebrow reveal">05.5 — D-LIFE</div><div class="dlife"><div class="dlife-photo reveal"><img src="images/d-life.jpeg" alt="D-LIFE"></div><div class="dlife-copy reveal delay1"><div class="mini">D-LIFE® / CURRENT AFFILIATION</div><h3>D-LIFE®</h3><p><strong>現在D-LIFE®に所属。インストラクター兼、代表選抜のアドバイザーを務めている。</strong></p><p>元所属は九州男児新撰組で世界大会出場経験あり、全盛期を支えブレイクダンス界に神風を吹かせた。</p><p>パワームーブはもちろんのこと、軽やかな体と強力な体幹から放たれるムーブは力強くて丁寧だ。</p></div></div></div></section>
+
+<section id="sponsors"><div class="wrap"><div class="eyebrow reveal">06 — SPONSORS</div><div class="sponsor-intro reveal"><h2 class="title">SPONSORS.</h2><div class="sponsor-big">PARTNERS / SUPPORT / COLLABORATION<br><span style="font-size:9px;color:#666;letter-spacing:.18em">SUPPORTED BY FOUR PARTNERS</span></div></div>
+<div class="sponsors">
+<div class="sponsor reveal" data-no="01"><strong>Red Bull</strong><small>SUPPORT</small></div><div class="sponsor reveal delay1" data-no="02"><strong>清水建設</strong><small>SUPPORT</small></div><div class="sponsor reveal delay2" data-no="03"><strong>CANON</strong><small>SUPPORT</small></div><div class="sponsor reveal" data-no="04"><strong>NIKE</strong><small>SUPPORT</small></div>
+</div>
+<div id="contact" class="contact">
+<div class="contact-card reveal"><div class="contact-label">INSTAGRAM</div><a class="insta" href="https://www.instagram.com/ra1_t0.n/" target="_blank" rel="noopener">@ra1_t0.n</a><p style="color:#777;font-size:11px;letter-spacing:.08em">FOLLOW / CONTACT</p></div>
+<div class="contact-card reveal delay1"><div class="contact-label">お仕事のご依頼はこちらまで</div><a class="mail" href="mailto:laixiang228@gmail.com">laixiang228@gmail.com</a><p style="color:#777;font-size:11px;line-height:1.8">各種ご依頼・お問い合わせをお待ちしています。</p></div>
+</div></div></section>
+
+<section class="next"><div class="wrap"><div class="eyebrow reveal">07 — NEXT</div><h2 class="reveal">KEEP<br>MOVING.</h2><p class="reveal delay1">Every move becomes a story.<br>Every stage becomes the next beginning.</p><div class="by-nike reveal"><span>by NIKE</span></div></div></section>
+<section class="final-photo"><div class="final-photo-wrap reveal"><img src="images/final-love-peace.jpeg" alt="love and peace"><div class="final-caption"><strong>LOVE AND PEACE.</strong><span>SOME THINGS ARE BETTER LEFT UNSAID.</span></div></div></section><footer><span>© RAITO NUMAGUCHI</span><span>OFFICIAL SITE / 2026</span></footer>
+<script>
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
